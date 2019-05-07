@@ -28,7 +28,11 @@ public class Library {
         return capacity;
     }
 
-    //    public void stockFull() {
-//        if()
-//    }
+    public void stockFull() {
+        if(this.bookCount() < this.capacity){
+            addBook(Book);
+        } else {
+            System.out.println("Stock is full!");
+        }
+    }
 }
